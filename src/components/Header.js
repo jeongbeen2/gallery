@@ -23,10 +23,10 @@ const Header = () => {
       </li>
       <li
         onClick={() => {
-          handleOnClickLink("PaintingDetail", "/1");
+          handleOnClickLink("ArtDetail", "/1");
         }}
       >
-        Painting Detail
+        Art Detail
       </li>
     </ul>
   );

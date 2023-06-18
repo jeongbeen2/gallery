@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "./Root";
 import Card from "./screens/Card";
 import Home from "./screens/Home";
-import PaintingDetail from "./screens/PaintingDetail";
+import ArtDetail from "./screens/ArtDetail";
 import NotFound from "./screens/NotFound";
 import ErrorComponent from "./components/ErrorComponent";
 
@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         errorElement: <ErrorComponent/>,
       },
       {
-        path: "paintingDetail/:artId",
-        element: <PaintingDetail />,
+        path: "artDetail/:artId",
+        element: <ArtDetail />,
         errorElement: <ErrorComponent/>,
       },
     ],
