@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import Root from "./Root";
-import Card from "./screens/Card";
+import SlideGallery from "./screens/SlideGallery";
 import Home from "./screens/Home";
 import ArtDetail from "./screens/ArtDetail";
 import NotFound from "./screens/NotFound";
@@ -18,8 +18,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "card",
-        element: <Card />,
+        path: "slide",
+        element: <SlideGallery />,
         errorElement: <ErrorComponent/>,
       },
       {

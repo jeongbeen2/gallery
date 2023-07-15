@@ -4,8 +4,6 @@ import { arts } from "../db";
 const ArtDetail = () => {
   const params = useParams();
   let { artId } = params;
-
-  console.log("art: ", arts[artId], artId);
   return (
     <>
       <div>ID: {arts[artId - 1].id}</div>

@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import * as SC from "./styles";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -6,29 +7,22 @@ const Header = () => {
     navigate(`/${route}${params}`);
   };
   return (
-    <ul>
-      <li
-        onClick={() => {
-          handleOnClickLink("card");
-        }}
-      >
-        card
-      </li>
-      <li
+    <SC.Navigation>
+      <div
         onClick={() => {
           handleOnClickLink("");
         }}
       >
-        home
-      </li>
-      <li
+        HOME
+      </div>
+      <div
         onClick={() => {
-          handleOnClickLink("ArtDetail", "/1");
+          handleOnClickLink("slider");
         }}
       >
-        Art Detail
-      </li>
-    </ul>
+        Slider
+      </div>
+    </SC.Navigation>
   );
 };
 
