@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Root from "./Root";
 import SlideGallery from "./screens/SlideGallery";
+import SandBox from "./screens/SandBox";
 import Home from "./screens/Home";
 import ArtDetail from "./screens/ArtDetail";
 import NotFound from "./screens/NotFound";
@@ -20,6 +21,11 @@ const router = createBrowserRouter([
       {
         path: "slide",
         element: <SlideGallery />,
+        errorElement: <ErrorComponent/>,
+      },
+      {
+        path: "sandBox",
+        element: <SandBox />,
         errorElement: <ErrorComponent/>,
       },
       {

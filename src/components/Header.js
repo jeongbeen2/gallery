@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import * as SC from "./styles";
+import * as SC from "../styles/styles";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -17,10 +17,17 @@ const Header = () => {
       </div>
       <div
         onClick={() => {
-          handleOnClickLink("slider");
+          handleOnClickLink("slide");
         }}
       >
         Slider
+      </div>
+      <div
+        onClick={() => {
+          handleOnClickLink("sandbox");
+        }}
+      >
+        SandBox
       </div>
     </SC.Navigation>
   );
